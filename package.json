@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest",
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "lint": "eslint .",
+    "seed:admin": "node src/scripts/createAdmin.js"
+
   },
   "keywords": [],
   "author": "",
@@ -18,14 +21,19 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.2.1",
     "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^9.0.0",
     "morgan": "^1.10.1",
     "validator": "^13.15.23",
+    "winston": "^3.18.3",
+    "winston-daily-rotate-file": "^5.0.0",
     "xss": "^1.0.15"
   },
   "devDependencies": {
+    "eslint": "^9.39.1",
     "nodemon": "^3.1.11"
   }
 }
